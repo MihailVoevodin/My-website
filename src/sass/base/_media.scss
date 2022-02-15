@@ -1,0 +1,225 @@
+@media (max-width: 1201px) {
+    .container {
+        max-width: 960px;
+    }
+    .home {
+        padding-top: 200px;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    .about {
+        &__photo {
+            width: 400px;
+            height: 500px;
+        }
+        &__content {
+            min-width: 400px;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .container {
+        max-width: 769px;
+    }
+    .about {
+        &__content {
+            min-width: 260px;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        max-width: 600px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .home {
+        &__scroll {
+        font-size: 10px;
+        bottom: 80px;
+        }
+    }
+    .about {
+        &__photo {
+            width: 250px;
+            height: 350px;
+        }
+        &__content {
+            font-size: 16px;
+            &-specialise {
+                font-size: 14px;
+            }
+            &-university {
+                margin: 5px 0;
+            }
+            &-experience {
+                padding-top: 5px;
+            }
+            &-job {
+                margin-top: 5px;
+            }
+        } 
+    }
+
+    .small-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .place {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        &__descr {
+            font-size: 22px;
+        }
+        &__photo {
+            display: none;
+        }
+        &__content {
+            font-size: 22px;
+            &-specialise {
+                font-size: 18px;
+            }
+            &-university {
+                margin: 15px 0;
+            }
+            &-experience {
+                padding-top: 15px;
+            }
+            &-job {
+                margin-top: 15px;
+            }
+        } 
+    }
+
+    .small-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .place {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 481px) {
+    .home {
+        font-size: 14px;
+        line-height: 16px;
+        &__title {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        &__prof {
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+    }
+    .about {
+        &__descr {
+            font-size: 18px;
+        }
+        &__content {
+            font-size: 18px;
+            &-specialise {
+                font-size: 16px;
+            }
+            &-university {
+                margin: 15px 0;
+            }
+            &-experience {
+                padding-top: 15px;
+            }
+            &-job {
+                margin-top: 15px;
+            }
+        }
+    }
+    .small-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .place {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about {
+        &__descr {
+            font-size: 16px;
+        }
+        &__content {
+            font-size: 16px;
+            &-specialise {
+                font-size: 14px;
+            }
+            &-university {
+                margin: 10px 0;
+            }
+            &-experience {
+                padding-top: 10px;
+            }
+            &-job {
+                margin-top: 10px;
+            }
+        }
+    }
+    .small-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .place {
+        font-size: 16px;
+    }
+}
+
+//max-height
+
+@media (max-height: 500px) {
+    .home {
+        padding-top: 120px;
+        &__scroll {
+            display: none;
+        }
+    }
+    .hamburger-menu {
+        font-size: 14px;
+        &__list {
+            margin-top: 60px;
+        }
+        li {
+            padding-bottom: 5px;
+        }
+        &__socials {
+            bottom: 20px;
+        }
+    }
+}
+
+@media (max-height: 320px) {
+    .home {
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+}

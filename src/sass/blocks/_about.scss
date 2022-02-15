@@ -1,0 +1,56 @@
+.about {
+    background-color: #C0C0C0;
+    &__descr {
+        padding-top: 40px;
+        text-align: center;
+    }
+    &__photo {
+        height: 650px;
+        width: 500px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding-bottom: 80px;
+    }
+    &__content {
+        min-width: 600px;
+        &-university {
+            margin: 10px 0 20px 0;
+            @include after-elem;
+        }
+        &-course {
+            @include after-elem;
+        }
+        &-experience {
+            padding-top: 20px;
+        }
+        &-specialise {
+            font-size: 16px;
+        }
+        &-job {
+            margin-top: 10px;
+            @include after-elem;
+        }
+        &-tel {
+            text-decoration: underline;
+        }
+    }
+}
+
+.bold {
+    span {
+        font-weight: 700;
+    }
+}
+
+.small-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.place {
+    font-size: 20px;
+    font-weight: 700;
+}

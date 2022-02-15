@@ -1,0 +1,124 @@
+.header {
+    color: $home-color;
+    position: fixed; 
+    padding: 10px 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    text-transform: uppercase;
+    a {
+        transition: all .5s;
+        &:hover {
+            color: #808080;
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    span {
+        display: block;
+        margin: 6px;
+        width: 35px;
+        height: 3px;
+        background-color: $home-color;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__link {
+        margin: 0 10px;
+    }
+}
+
+.hamburger-menu {
+    color: $home-color;
+    text-transform: uppercase;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    right: -100%;
+    visibility: hidden;
+    background-color: #191970;
+    z-index: 10;
+    transition: all .6s;
+    &__list {
+        margin: 120px 0 0 40px;  
+    }
+    li {
+        padding-bottom: 15px;
+    }
+    &__close {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        cursor: pointer;
+    }
+    &__socials {
+        width: 100%;
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        justify-content: center;
+        a {
+            display: block;
+            margin: 0 10px;
+        }
+    }
+}
+
+.active {
+    right: 0;
+    visibility: visible;
+}
+
+
+.home {    
+    position: relative;
+    min-height: 100vh;
+    color: $home-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: center / cover no-repeat url('../img/home-bg.jpg');
+    padding-top: 450px;
+    letter-spacing: 2px;
+    &__title {
+        font-size: 80px;
+        line-height: 86px;
+    }
+    &__prof {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    &__motto {
+        color: #808080;
+        padding-top: 20px;
+        text-decoration: underline;
+    }
+    &__scroll {
+        position: absolute;
+        right: -20px;
+        bottom: 130px;
+        transform: rotate(90deg);
+        a {
+            display: flex;
+            align-items: center;
+        }
+        svg {
+            margin-left: 10px;
+            height: 25px;
+            width: 25px;
+        }
+    }
+}
+
