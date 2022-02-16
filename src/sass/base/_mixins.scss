@@ -12,3 +12,17 @@
         top: 8px;
     }
 }
+
+@mixin contacts-icon {
+    padding-left: 30px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+}
