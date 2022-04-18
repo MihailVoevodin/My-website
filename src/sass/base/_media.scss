@@ -104,6 +104,21 @@
         grid-template-rows: repeat(2, 280px);
         grid-auto-rows: 280px;
     }
+
+    .works__link {
+        transition: none;
+        transform: none;
+        &:hover {
+            transform: scale(1);
+        }
+        span {
+            opacity: 1;
+        }
+        img {
+            filter: brightness(40%);
+        }
+    }
+
     .contacts {
         &__wrapper {
             display: block;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mihail Voevodin</title>
+    <title>Mikhail Voevodin</title>
     <meta name="title" content="Мое портфолио">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
 
@@ -65,11 +65,11 @@
                 </svg>
             </div>
             <ul class="hamburger-menu__list">
-                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#">Home</a></li>
-                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#">About</a></li>
-                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#">Skills</a></li>
-                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#">Works</a></li>
-                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#">Contacts</a></li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#home">Home</a></li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#about">About</a></li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#skills">Skills</a></li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#works">Works</a></li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="#contacts">Contacts</a></li>
             </ul>
             <div class="hamburger-menu__socials">
                 <a href="https://github.com/MihailVoevodin">
@@ -107,7 +107,7 @@
     <section class="home" id="home">
         <div class="container">
             <div class="home__subtitle">Hello, world!</div>
-            <h1 class="home__title">I`m Mihail Voevodin</h1>
+            <h1 class="home__title">I`m Mikhail Voevodin</h1>
             <div class="home__prof">Front-end Developer</div>
             <div class="home__motto">Everything is possible even the impossible</div>
         </div>
@@ -246,23 +246,37 @@
                 These are my projects. Landing pages, useful scripts, etc.
             </p>
             <div class="works__wrapper">
-                <a href="#" class="works__link">
+                <a href="burger/index.html" class="works__link">
+                    <span>Burger<br>landing page</span>
                     <img class="works__img" src="img/burger.jpg" alt="Burger">
                 </a>
-                <a href="#" class="works__link">
+                <a href="timer/index.html" class="works__link">
+                    <span>Timer</span>
                     <img class="works__img" src="img/timer.jpg" alt="Timer">
                 </a>
-                <a href="#" class="works__link">
-                    <img class="works__img" src="img/woodies.jpg" alt="Woodies">
+                <a href="weather/index.html" class="works__link">
+                    <span>Weather app</span>
+                    <img class="works__img" src="img/weather.jpg" alt="Woodies">
                 </a>
-                <a href="#" class="works__link vertical">
+                <a href="spacex/index.html" class="works__link vertical">
+                    <span>SpaceX<br>landing page</span>
                     <img class="works__img" src="img/spacex.jpg" alt="Falcon Heavy">
                 </a>
-                <a href="#" class="works__link horizontal">
+                <a href="game/index.html" class="works__link horizontal">
+                    <span>Game<br>landing page</span>
                     <img class="works__img" src="img/game.jpg" alt="Game">
                 </a>
-                <a href="#" class="works__link">
+                <a href="stopwatch/index.html" class="works__link">
+                    <span>Stopwatch</span>
                     <img class="works__img" src="img/stopwatch.jpg" alt="Stopwatch">
+                </a>
+                <a href="movies/index.html" class="works__link">
+                    <span>Movies app</span>
+                    <img class="works__img" src="img/movies.jpg" alt="Movies">
+                </a>
+                <a href="todo/index.html" class="works__link">
+                    <span>ToDo app</span>
+                    <img class="works__img" src="img/todo.jpg" alt="ToDo">
                 </a>
             </div>
         </div>
@@ -305,7 +319,7 @@
                         <a class="contacts__email bold" href="mailto:mihailvoevodin@gmail.com"><span>Email:</span> mihailvoevodin33@gmail.com</a>
                     </div>
                 </div>
-                <form class="contacts__form">
+                <form class="contacts__form" action="mail.php" method="POST">
                     <div class="contacts__input">
                         <input required name="name" id="name" type="text">
                         <label for="name">Your name</label>
@@ -323,7 +337,7 @@
                         <button class="contacts__btn">Send</button>
                         <div class="contacts__policy">
                             <input required type="checkbox">
-                            <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            <span>Я согласен(а) с <a href="policy.html">политикой конфиденциальности</a></span>
                         </div>
                     </div>
                 </form>
@@ -334,6 +348,8 @@
 
 
     <script src="js/script.js"></script>
+    
+
 </body>
 
 </html>

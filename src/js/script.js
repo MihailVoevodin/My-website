@@ -21,6 +21,14 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    const menuItems = document.querySelectorAll('.hamburger-menu__item');
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            menuSide.classList.remove('active');
+        })
+    })
+
     //scroll-menu
     const menu = document.querySelector('.header');
 
