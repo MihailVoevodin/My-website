@@ -21,7 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    const menuItems = document.querySelectorAll('.hamburger-menu__item');
+    const menuItems = document.querySelectorAll('.hamburger-menu__link');
+    console.log(menuItems);
 
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -38,5 +39,21 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             menu.style.backgroundColor = "transparent";
         }
+    })
+
+    //scroll-top
+    const scrollBtn = document.querySelector('.scroll-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > '1000') {
+            scrollBtn.style.display = 'block';
+        } else {
+            scrollBtn.style.display = 'none';
+        }
+    })
+    
+
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo(0, 0);
     })
 })
