@@ -17,10 +17,6 @@
         min-width: 600px;
         &-university {
             margin: 10px 0 20px 0;
-            @include after-elem;
-        }
-        &-course {
-            @include after-elem;
         }
         &-experience {
             padding-top: 20px;
@@ -30,7 +26,6 @@
         }
         &-job {
             margin-top: 10px;
-            @include after-elem;
         }
         &-tel {
             text-decoration: underline;
